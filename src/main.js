@@ -1,13 +1,6 @@
-import './style.css';
+import { UsersAppComponent } from "./crud-users/components/users-app-component";
+
+const appComponentHtml = document.querySelector('#app');
 
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <h1>CRUD VanillaJS</h1>
-
-    <div class="card">
-      
-    </div>
-  </div>
-`;
-
+UsersAppComponent(appComponentHtml);
