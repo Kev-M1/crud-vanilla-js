@@ -1,4 +1,4 @@
-
+import "./render-users-table.css"
 
 let table;
 
