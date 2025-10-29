@@ -6,7 +6,4 @@ const appComponentHtml = document.querySelector('#app');
 usersStore.initStore();
 UsersAppComponent(appComponentHtml);
 
-const htmlElement = document.querySelector('.card');
-htmlElement.textContent = 'hola'
 
-usersStore.loadNextPage();
