@@ -1,3 +1,4 @@
+import { showModal } from "../render-modal/render-modal";
 import "./render-add-button.css"
 
 export const renderAddButton = (htmlElement) => {
@@ -10,6 +11,6 @@ export const renderAddButton = (htmlElement) => {
   //Listener
 
   fabButton.addEventListener('click', (event) => {
-
+    showModal()
   })
 };
