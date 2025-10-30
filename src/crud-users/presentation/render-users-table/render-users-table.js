@@ -33,7 +33,7 @@ export const renderUsersTable = (users, htmlElement) => {
   }
 
   const tablebody = table.querySelector('tbody');
-
+  tablebody.innerHTML = ``;
 
   users.forEach(user => {
     const userRow = document.createElement('tr');
@@ -51,10 +51,7 @@ export const renderUsersTable = (users, htmlElement) => {
     `;
     tablebody.append(userRow);
   });
-  console.log(table);
-  htmlElement.append(table)
-
-
+  htmlElement.prepend(table);
 };
 
 
