@@ -1,4 +1,4 @@
-import { generalView, renderButtons, renderUsersTable } from "../presentation/index";
+import { generalView, renderAddButton, renderButtons, renderModal, renderUsersTable } from "../presentation/index";
 import usersStore from "../store/users-store";
 
 
@@ -14,6 +14,8 @@ export const UsersAppComponent = async (htmlAppElement) => {
   await usersStore.loadNextPage();
   renderUsersTable(usersStore.getUsers(), htmlCardElement);
   renderButtons(htmlCardElement);
+  renderAddButton(htmlCardElement);
+  renderModal(htmlCardElement);
 
 
 };
