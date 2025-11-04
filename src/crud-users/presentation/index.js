@@ -1,0 +1,1 @@
+export { renderGeneralView } from "./render-general-view/render-general-view";
